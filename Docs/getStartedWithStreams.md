@@ -33,7 +33,7 @@ readable.on('data', (chunk) => {
     writable.write(chunk); // Potentially causes backpressure
 });
 
--- **Pipes and Backpressure : 
+-- **Pipes and Backpressure** : 
 `The pipe() method handles backpressure automatically. When you pipe a readable stream to a writable stream, Node.js manages the flow of data. If the writable stream's internal buffer is full, the readable stream will pause until there is space available in the buffer`
 
 const fs = require('fs');
