@@ -20,7 +20,7 @@ For non-text binary data (like images), it's better to leave the stream as raw B
 ### Understanding Backpressure in Node.js Streams
 Backpressure occurs in streams when the readable stream is producing data faster than the writable stream can consume it. This can lead to memory issues and potential data loss if not managed correctly
 
-### Events and Backpressure
+-- **Events and Backpressure**: 
 ```javascript
 const fs = require('fs');
 
